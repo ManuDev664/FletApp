@@ -10,7 +10,8 @@ def main(page: ft.Page):
     )
     minutos_tf = ft.TextField(label="Minutos")
     horas_tf = ft.TextField(label="Horas")
-    segundos_tf = ft.TextField(label="Segundos")
+    dia_tf = ft.TextField(label="Dia")
+    mes_tf = ft.TextField(label="Mes")
     columna = ft.Column(
         alignment=ft.CrossAxisAlignment.CENTER,
         horizontal_alignment=ft.MainAxisAlignment.CENTER,
@@ -18,7 +19,8 @@ def main(page: ft.Page):
             ft.Text("PROGRAMADOR DE TAREAS"),
             minutos_tf,
             horas_tf,
-            segundos_tf,
+            dia_tf,
+            mes_tf,
             ft.ElevatedButton("Crear Tarea")
         ]
     )
