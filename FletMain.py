@@ -8,14 +8,17 @@ def main(page: ft.Page):
         width=page.width,
         height=page.height,
     )
+    minutos_tf = ft.TextField(label="Minutos")
+    horas_tf = ft.TextField(label="Horas")
+    segundos_tf = ft.TextField(label="Segundos")
     columna = ft.Column(
         alignment=ft.CrossAxisAlignment.CENTER,
         horizontal_alignment=ft.MainAxisAlignment.CENTER,
         controls=[
             ft.Text("PROGRAMADOR DE TAREAS"),
-            ft.TextField(label="Minutos"),
-            ft.TextField(label="Horas"),
-            ft.TextField(label="Segundos"),
+            minutos_tf,
+            horas_tf,
+            segundos_tf,
             ft.ElevatedButton("Crear Tarea")
         ]
     )
