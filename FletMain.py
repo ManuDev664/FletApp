@@ -16,7 +16,7 @@ def main(page: ft.Page):
             ft.TextField(label="Minutos"),
             ft.TextField(label="Horas"),
             ft.TextField(label="Segundos"),
-            ft.ElevatedButton(label="Crear Tarea")
+            ft.ElevatedButton("Crear Tarea")
         ]
     )
     fila = ft.Row(
