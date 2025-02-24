@@ -10,9 +10,13 @@ def main(page: ft.Page):
     )
     columna = ft.Column(
         alignment=ft.CrossAxisAlignment.CENTER,
+        horizontal_alignment=ft.MainAxisAlignment.CENTER,
         controls=[
-            ft.Text("Hola, Flet!"),
-            ft.Text("Esto es otra etiqueta"),
+            ft.Text("PROGRAMADOR DE TAREAS"),
+            ft.TextField(label="Minutos"),
+            ft.TextField(label="Horas"),
+            ft.TextField(label="Segundos"),
+            ft.ElevatedButton(label="Crear Tarea")
         ]
     )
     fila = ft.Row(
