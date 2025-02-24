@@ -3,7 +3,7 @@ import flet as ft
 def main(page: ft.Page):
     page.title = "Mi primera aplicacion con FLET"
 
-    def obtener_valores():
+    def obtener_valores(e):
         minutos = minutos_tf.value
         horas = horas_tf.value
         dia = dia_tf.value
@@ -29,7 +29,7 @@ def main(page: ft.Page):
             horas_tf,
             dia_tf,
             mes_tf,
-            ft.ElevatedButton("Crear Tarea")
+            ft.ElevatedButton("Crear Tarea", on_click=obtener_valores),
         ]
     )
     fila = ft.Row(
