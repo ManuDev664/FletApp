@@ -2,6 +2,14 @@ import flet as ft
 
 def main(page: ft.Page):
     page.title = "Mi primera aplicacion con FLET"
+
+    def obtener_valores():
+        minutos = minutos_tf.value
+        horas = horas_tf.value
+        dia = dia_tf.value
+        mes = mes_tf.value
+        print(f"Los Minutos: {minutos}, Hora: {horas}, Dia: {dia}, Mes: {mes}")
+
     container = ft.Container(
         padding=10,
         bgcolor=ft.Colors.BLUE_GREY_500,
